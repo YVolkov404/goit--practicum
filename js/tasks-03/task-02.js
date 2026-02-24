@@ -13,11 +13,13 @@ const stones = [
 const totalPrice = function calcTotatlPrice (stones, stonesName) {
     for (const {name, price, quantity} of stones) {
         if (name === stonesName) {
-            totalPriceOfStones = price * quantity; 
+            return price * quantity; 
         }
     }
-    return totalPriceOfStones;
 }
 
 console.log(totalPrice(stones, "Сапфір"));
+console.log(totalPrice(stones, "Смарагд"));
+console.log(totalPrice(stones, "Рубін"));
+console.log(totalPrice(stones, "Ізумруд"));
 
