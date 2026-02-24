@@ -1,2 +1,1 @@
-# goit--practicum
-javascript tasks
+# Practicum
