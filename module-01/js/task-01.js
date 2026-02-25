@@ -1,7 +1,3 @@
-// JavaScript tasks | Task 01
-
-console.log("Hello World");
-
 // *? використовуючи функцію if...else
 // *? напишіть код який запитуватиме:
 // *? "Яка офіційна назва JavaScrijpt?"
