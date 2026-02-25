@@ -7,3 +7,21 @@ const fnA = function (arr) {
 }
 
 console.log(fnA(arr));
+
+// const fnB = function (arr) {
+//     return arr.reverse();
+// }
+
+// console.log(fnB(arr));
+
+// const fnC = function (arr) {
+//     return arr.join(' ');
+// }
+
+// console.log(fnC(arr));
+
+const fnD = function (arr) {
+    return arr.reverse().join(' ');
+}
+
+console.log(fnD(arr));
