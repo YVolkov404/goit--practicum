@@ -26,7 +26,6 @@ const tweets = [
 
 const array = tweets.flatMap(el => el.tags);
 
-
 const object = function (array) {
   let js = 0;
   let react = 0;
@@ -58,3 +57,12 @@ const object = function (array) {
 };
 
 console.log(object(array));
+
+const tags = array.reduce((acc, tag) => {
+  return {
+    ...acc,
+    [tag]: acc[tag] ? acc[tag] + 1 : 1
+  }
+}, {})
+
+console.log(tags);
