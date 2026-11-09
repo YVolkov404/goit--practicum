@@ -1,0 +1,20 @@
+{
+  "name": "goit--practicum",
+  "version": "1.0.0",
+  "description": "javascript tasks",
+  "homepage": "https://github.com/YVolkov404/goit--practicum#readme",
+  "bugs": {
+    "url": "https://github.com/YVolkov404/goit--practicum/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YVolkov404/goit--practicum.git"
+  },
+  "license": "ISC",
+  "author": "YVolkov404",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  }
+}

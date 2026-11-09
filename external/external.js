@@ -70,7 +70,7 @@ function f1(min, max) {
   ));
 }
 
-document.querySelector(".b-1").addEventListener("click", function () {
+document.querySelector(".b-9").addEventListener("click", function () {
   f1(arg1, arg2);
 });
 
@@ -123,7 +123,6 @@ function sum(x, y) {
   total = x + y;
   return total;
 }
-
 console.log(sum(x, y));
 
 // !! task 09
@@ -133,7 +132,6 @@ let g = Math.floor(Math.random() * 100);
 function biggestNumber(f, g) {
   return f > g ? f : g;
 }
-
 console.log(biggestNumber(f, g));
 
 // !! task 10
@@ -189,10 +187,10 @@ console.log(result4);
 // !! task 16
 function t5_1() {
   console.log(this);
-  console.log("Hello!");
+  this.textContent = 'Hello'
 }
 
-t5_1.call(document.querySelector(".out-1"));
+t5_1.call(document.querySelector(".out-0"));
 
 // !! task 17
 function t6(str) {
@@ -201,7 +199,7 @@ function t6(str) {
 }
 
 document.querySelector(".b-7").addEventListener("click", () => {
-  return t6.call(document.querySelector(".out-9"), "SayHi!");
+  return t6.call(document.querySelector(".out-7"), "SayHi!");
 });
 
 // !! task 18
@@ -210,7 +208,7 @@ function max1(num1, num2) {
   return (this.textContent = num1 > num2 ? num1 : num2);
 }
 
-max1.call(document.querySelector(".out-7"), 15, 9);
+max1.call(document.querySelector(".out-8"), 15, 9);
 
 // !! task 19
 function max2(num1, num2) {
@@ -219,5 +217,5 @@ function max2(num1, num2) {
 }
 
 document.querySelector(".b-8").addEventListener("click", () => {
-  console.log(max2.call(document.querySelector(".out-8"), 22, 13));
+  console.log(max2.call(document.querySelector(".out-9"), 22, 13));
 });
