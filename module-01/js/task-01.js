@@ -5,7 +5,7 @@
 // *? то показати через alert: "Вірно!"
 // *? інакше відобразити: "Не знаєте? ECMAScript!"
 
-const officialName = prompt("Яка офіційна назва JavaScrijpt?").trim();
+const officialName = prompt("Яка офіційна назва JavaScript?").trim();
 
 if (officialName === "ECMAScript") {
   alert("Вірно!");

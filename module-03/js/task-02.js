@@ -13,15 +13,13 @@ Storage.prototype.addItems = function (item) {
 
 Storage.prototype.removeItems = function (item) {
     const array = this.getItems();
-    for (el of array) {
-        if(array.includes(item) || array.includes(el)) {
-            const index = array.indexOf(item);
-            if (index > -1) {
-                return this.items.splice(index, 1);
-            }
-        }
+    const index = array.indexOf(item);
+
+    if (index === -1) {
+        return `There is no ${item}`;
     }
-    return `There is no ${item}`;
+
+    return this.items.splice(index, 1)[0];
 }
 
 const storage = new Storage(['apple', 'banana', 'mango']);
